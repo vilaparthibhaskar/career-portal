@@ -40,7 +40,7 @@ const companies = [
     domain: "amazon.jobs",
     accent: "#ff9900",
     portal: "Amazon Jobs",
-    url: "https://www.amazon.jobs/en/search?offset=0&result_limit=10&sort=recent&category%5B%5D=software-development&job_type%5B%5D=Full-Time&distanceType=Mi&radius=Anykm&industry_experience=one_to_three_years&latitude=38.89036&longitude=-77.03196&loc_group_id=&loc_query=United%20States&base_query=&city=&country=USA&region=&county=&query_options=&",
+    url: "https://www.amazon.jobs/en/search?offset=0&result_limit=10&sort=recent&category%5B%5D=software-development&job_type%5B%5D=Full-Time&country%5B%5D=USA&distanceType=Mi&radius=24km&industry_experience=one_to_three_years&latitude=&longitude=&loc_group_id=&loc_query=&base_query=software&city=&country=&region=&county=&query_options=&",
   },
   {
     name: "Microsoft",
