@@ -1,0 +1,314 @@
+:root {
+  color: #18212f;
+  background: #f5f7fb;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+main {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 28px 0 42px;
+}
+
+.topbar {
+  align-items: center;
+  display: flex;
+  gap: 18px;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.brand {
+  align-items: center;
+  display: flex;
+  gap: 14px;
+}
+
+.brandMark {
+  align-items: center;
+  background: #1f2937;
+  border-radius: 8px;
+  color: white;
+  display: grid;
+  height: 52px;
+  justify-content: center;
+  width: 52px;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 2.8vw, 3rem);
+  letter-spacing: 0;
+  line-height: 1;
+}
+
+.brand p {
+  color: #667085;
+  margin-top: 8px;
+}
+
+.primaryButton,
+.cardButton {
+  align-items: center;
+  border: 0;
+  border-radius: 8px;
+  display: inline-flex;
+  font-weight: 700;
+  gap: 8px;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 16px;
+}
+
+.primaryButton {
+  background: #1f2937;
+  color: white;
+  white-space: nowrap;
+}
+
+.filters {
+  align-items: end;
+  background: white;
+  border: 1px solid #e1e7f0;
+  border-radius: 8px;
+  box-shadow: 0 18px 45px rgba(31, 41, 55, 0.08);
+  display: grid;
+  gap: 14px;
+  grid-template-columns: 1.05fr 1.25fr 0.9fr 0.9fr 1.1fr 0.9fr;
+  padding: 16px;
+}
+
+.filterHeader,
+.summary,
+.searchBox {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
+.filterHeader {
+  color: #1f2937;
+  font-weight: 800;
+  min-height: 44px;
+}
+
+label {
+  display: grid;
+  gap: 7px;
+}
+
+label span {
+  color: #596579;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+input,
+select {
+  background: #f8fafc;
+  border: 1px solid #d5deea;
+  border-radius: 8px;
+  color: #18212f;
+  height: 44px;
+  min-width: 0;
+  padding: 0 12px;
+  width: 100%;
+}
+
+input:focus,
+select:focus {
+  border-color: #2563eb;
+  outline: 3px solid rgba(37, 99, 235, 0.16);
+}
+
+.utilityRow {
+  align-items: center;
+  display: flex;
+  gap: 14px;
+  justify-content: space-between;
+  margin: 20px 0 16px;
+}
+
+.searchBox {
+  background: white;
+  border: 1px solid #dfe7f2;
+  border-radius: 8px;
+  color: #667085;
+  max-width: 360px;
+  padding: 0 12px;
+  width: 100%;
+}
+
+.searchBox input {
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.summary {
+  color: #596579;
+  font-size: 0.94rem;
+  font-weight: 700;
+}
+
+.companyGrid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.companyCard {
+  background: white;
+  border: 1px solid #e1e7f0;
+  border-radius: 8px;
+  display: grid;
+  gap: 18px;
+  min-height: 254px;
+  padding: 18px;
+  position: relative;
+}
+
+.companyCard::before {
+  background: var(--accent);
+  border-radius: 8px 8px 0 0;
+  content: "";
+  height: 4px;
+  left: -1px;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+}
+
+.companyTop,
+.cardMeta {
+  align-items: center;
+  display: flex;
+}
+
+.companyTop {
+  justify-content: space-between;
+}
+
+.logo {
+  background: #f8fafc;
+  border: 1px solid #e1e7f0;
+  border-radius: 8px;
+  height: 52px;
+  padding: 8px;
+  width: 52px;
+}
+
+.iconButton {
+  align-items: center;
+  background: #f8fafc;
+  border: 1px solid #dfe7f2;
+  border-radius: 8px;
+  color: #344054;
+  display: grid;
+  height: 40px;
+  justify-content: center;
+  width: 40px;
+}
+
+.companyCard h2 {
+  color: #111827;
+  font-size: 1.35rem;
+  letter-spacing: 0;
+  line-height: 1.15;
+}
+
+.companyCard p {
+  color: #667085;
+  margin-top: 6px;
+}
+
+.cardMeta {
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cardMeta span {
+  align-items: center;
+  background: #f6f8fb;
+  border: 1px solid #e5ebf3;
+  border-radius: 8px;
+  color: #4b5565;
+  display: inline-flex;
+  font-size: 0.88rem;
+  font-weight: 700;
+  gap: 6px;
+  min-height: 34px;
+  padding: 0 10px;
+}
+
+.cardButton {
+  align-self: end;
+  background: color-mix(in srgb, var(--accent) 13%, white);
+  border: 1px solid color-mix(in srgb, var(--accent) 32%, white);
+  color: #18212f;
+  width: 100%;
+}
+
+@media (max-width: 980px) {
+  .filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .companyGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 680px) {
+  main {
+    width: min(100% - 24px, 1180px);
+    padding-top: 18px;
+  }
+
+  .topbar,
+  .utilityRow {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .brand {
+    align-items: flex-start;
+  }
+
+  .filters,
+  .companyGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .summary {
+    align-items: flex-start;
+  }
+}
